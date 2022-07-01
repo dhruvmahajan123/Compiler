@@ -1,0 +1,254 @@
+ parse tree is created successfully
+SYMBOL                      TERMINAL  TYPE EXPR                LEXEME         LINE NUMBER GRAMMAR RULE  DEPTH
+-------------------------------------------------------------------------------------------------------------
+program                     NO        NA                       -              -           1             0    
+TK_PROGRAM                  YES       -                        program        1           -             1    
+BR_OP                       YES       -                        (              1           -             1    
+BR_CL                       YES       -                        )              1           -             1    
+CR_OP                       YES       -                        {              2           -             1    
+PROGRAMBODY                 NO        NA                       -              -           2             1    
+DECLARATION_LIST            NO        NA                       -              -           3             2    
+DECLARATION_STMT            NO        NA                       -              -           7             3    
+PRIM_DECLARATION_STMT       NO        NA                       -              -           11            4    
+TK_DECLARE                  YES       -                        declare        3           -             5    
+TK_LIST                     YES       -                        list           3           -             5    
+TK_OF                       YES       -                        of             3           -             5    
+TK_VARIABLES                YES       -                        variables      3           -             5    
+ID_LIST                     NO        NA                       -              -           12            5    
+ID                          YES       -                        new            3           -             6    
+ID_LIST                     NO        NA                       -              -           12            6    
+ID                          YES       -                        d              3           -             7    
+ID_LIST                     NO        NA                       -              -           12            7    
+ID                          YES       -                        w              3           -             8    
+ID_LIST                     NO        NA                       -              -           13            8    
+ID                          YES       -                        e2             3           -             9    
+TK_COLON                    YES       -                        :              3           -             5    
+PRIM_TYPE                   NO        NA                       -              -           14            5    
+TK_INTEGER                  YES       -                        integer        3           -             6    
+TK_SEMICOLON                YES       -                        ;              3           -             5    
+DECLARATION_LIST            NO        NA                       -              -           3             3    
+DECLARATION_STMT            NO        NA                       -              -           7             4    
+PRIM_DECLARATION_STMT       NO        NA                       -              -           10            5    
+TK_DECLARE                  YES       -                        declare        4           -             6    
+ID                          YES       -                        v1             4           -             6    
+TK_COLON                    YES       -                        :              4           -             6    
+PRIM_TYPE                   NO        NA                       -              -           14            6    
+TK_INTEGER                  YES       -                        integer        4           -             7    
+TK_SEMICOLON                YES       -                        ;              4           -             6    
+DECLARATION_LIST            NO        NA                       -              -           3             4    
+DECLARATION_STMT            NO        NA                       -              -           7             5    
+PRIM_DECLARATION_STMT       NO        NA                       -              -           11            6    
+TK_DECLARE                  YES       -                        declare        5           -             7    
+TK_LIST                     YES       -                        list           5           -             7    
+TK_OF                       YES       -                        of             5           -             7    
+TK_VARIABLES                YES       -                        variables      5           -             7    
+ID_LIST                     NO        NA                       -              -           12            7    
+ID                          YES       -                        a1             5           -             8    
+ID_LIST                     NO        NA                       -              -           13            8    
+ID                          YES       -                        a2             5           -             9    
+TK_COLON                    YES       -                        :              5           -             7    
+PRIM_TYPE                   NO        NA                       -              -           14            7    
+TK_INTEGER                  YES       -                        integer        5           -             8    
+TK_SEMICOLON                YES       -                        ;              5           -             7    
+DECLARATION_LIST            NO        NA                       -              -           3             5    
+DECLARATION_STMT            NO        NA                       -              -           7             6    
+PRIM_DECLARATION_STMT       NO        NA                       -              -           11            7    
+TK_DECLARE                  YES       -                        declare        6           -             8    
+TK_LIST                     YES       -                        list           6           -             8    
+TK_OF                       YES       -                        of             6           -             8    
+TK_VARIABLES                YES       -                        variables      6           -             8    
+ID_LIST                     NO        NA                       -              -           12            8    
+ID                          YES       -                        b1             6           -             9    
+ID_LIST                     NO        NA                       -              -           12            9    
+ID                          YES       -                        b2             6           -             10   
+ID_LIST                     NO        NA                       -              -           13            10   
+ID                          YES       -                        b3             6           -             11   
+TK_COLON                    YES       -                        :              6           -             8    
+PRIM_TYPE                   NO        NA                       -              -           16            8    
+TK_BOOLEAN                  YES       -                        boolean        6           -             9    
+TK_SEMICOLON                YES       -                        ;              6           -             8    
+DECLARATION_LIST            NO        NA                       -              -           3             6    
+DECLARATION_STMT            NO        NA                       -              -           7             7    
+PRIM_DECLARATION_STMT       NO        NA                       -              -           11            8    
+TK_DECLARE                  YES       -                        declare        7           -             9    
+TK_LIST                     YES       -                        list           7           -             9    
+TK_OF                       YES       -                        of             7           -             9    
+TK_VARIABLES                YES       -                        variables      7           -             9    
+ID_LIST                     NO        NA                       -              -           12            9    
+ID                          YES       -                        c1             7           -             10   
+ID_LIST                     NO        NA                       -              -           13            10   
+ID                          YES       -                        c2             7           -             11   
+TK_COLON                    YES       -                        :              7           -             9    
+PRIM_TYPE                   NO        NA                       -              -           15            9    
+TK_REAL                     YES       -                        real           7           -             10   
+TK_SEMICOLON                YES       -                        ;              7           -             9    
+DECLARATION_LIST            NO        NA                       -              -           4             7    
+DECLARATION_STMT            NO        NA                       -              -           7             8    
+PRIM_DECLARATION_STMT       NO        NA                       -              -           11            9    
+TK_DECLARE                  YES       -                        declare        8           -             10   
+TK_LIST                     YES       -                        list           8           -             10   
+TK_OF                       YES       -                        of             8           -             10   
+TK_VARIABLES                YES       -                        variables      8           -             10   
+ID_LIST                     NO        NA                       -              -           12            10   
+ID                          YES       -                        m1             8           -             11   
+ID_LIST                     NO        NA                       -              -           12            11   
+ID                          YES       -                        m2             8           -             12   
+ID_LIST                     NO        NA                       -              -           13            12   
+ID                          YES       -                        m3             8           -             13   
+TK_COLON                    YES       -                        :              8           -             10   
+PRIM_TYPE                   NO        NA                       -              -           15            10   
+TK_REAL                     YES       -                        real           8           -             11   
+TK_SEMICOLON                YES       -                        ;              8           -             10   
+ASSIGNMENT_LIST             NO        NA                       -              -           5             2    
+ASSIGNMENT_STMT             NO        NA                       -              -           42            3    
+ID                          YES       -                        new            9           -             4    
+TK_EQUALS                   YES       -                        =              9           -             4    
+EXPRESSION                  NO        NA                       -              -           45            4    
+TERM                        NO        NA                       -              -           48            5    
+FACTOR                      NO        NA                       -              -           51            6    
+ID                          YES       -                        d              9           -             7    
+TK_STAR                     YES       -                        *              9           -             6    
+TERM                        NO        NA                       -              -           50            6    
+FACTOR                      NO        NA                       -              -           51            7    
+ID                          YES       -                        e2             9           -             8    
+TK_PLUS                     YES       -                        +              9           -             5    
+EXPRESSION                  NO        NA                       -              -           45            5    
+TERM                        NO        NA                       -              -           50            6    
+FACTOR                      NO        NA                       -              -           51            7    
+ID                          YES       -                        w              9           -             8    
+TK_PLUS                     YES       -                        +              9           -             6    
+EXPRESSION                  NO        NA                       -              -           44            6    
+BOOL_EXPRESSION             NO        NA                       -              -           60            7    
+BOOL_TERM                   NO        NA                       -              -           62            8    
+FACTOR                      NO        NA                       -              -           58            9    
+CONSTANT                    YES       -                        76875          9           -             10   
+TK_SEMICOLON                YES       -                        ;              9           -             4    
+ASSIGNMENT_LIST             NO        NA                       -              -           5             3    
+ASSIGNMENT_STMT             NO        NA                       -              -           42            4    
+ID                          YES       -                        v1             10          -             5    
+TK_EQUALS                   YES       -                        =              10          -             5    
+EXPRESSION                  NO        NA                       -              -           46            5    
+TERM                        NO        NA                       -              -           50            6    
+FACTOR                      NO        NA                       -              -           51            7    
+ID                          YES       -                        a1             10          -             8    
+TK_MINUS                    YES       -                        -              10          -             6    
+EXPRESSION                  NO        NA                       -              -           47            6    
+TERM                        NO        NA                       -              -           48            7    
+FACTOR                      NO        NA                       -              -           51            8    
+ID                          YES       -                        a2             10          -             9    
+TK_STAR                     YES       -                        *              10          -             8    
+TERM                        NO        NA                       -              -           50            8    
+FACTOR                      NO        NA                       -              -           51            9    
+ID                          YES       -                        d              10          -             10   
+TK_SEMICOLON                YES       -                        ;              10          -             5    
+ASSIGNMENT_LIST             NO        NA                       -              -           5             4    
+ASSIGNMENT_STMT             NO        NA                       -              -           42            5    
+ID                          YES       -                        b1             11          -             6    
+TK_EQUALS                   YES       -                        =              11          -             6    
+EXPRESSION                  NO        NA                       -              -           44            6    
+BOOL_EXPRESSION             NO        NA                       -              -           59            7    
+BOOL_TERM                   NO        NA                       -              -           61            8    
+FACTOR                      NO        NA                       -              -           51            9    
+ID                          YES       -                        b2             11          -             10   
+TK_AND                      YES       -                        &&&            11          -             9    
+BOOL_TERM                   NO        NA                       -              -           62            9    
+FACTOR                      NO        NA                       -              -           51            10   
+ID                          YES       -                        b3             11          -             11   
+TK_OR                       YES       -                        |||            11          -             8    
+BOOL_EXPRESSION             NO        NA                       -              -           60            8    
+BOOL_TERM                   NO        NA                       -              -           62            9    
+FACTOR                      NO        NA                       -              -           51            10   
+ID                          YES       -                        b1             11          -             11   
+TK_SEMICOLON                YES       -                        ;              11          -             6    
+ASSIGNMENT_LIST             NO        NA                       -              -           5             5    
+ASSIGNMENT_STMT             NO        NA                       -              -           42            6    
+ID                          YES       -                        c1             12          -             7    
+TK_EQUALS                   YES       -                        =              12          -             7    
+EXPRESSION                  NO        NA                       -              -           45            7    
+TERM                        NO        NA                       -              -           50            8    
+FACTOR                      NO        NA                       -              -           51            9    
+ID                          YES       -                        c2             12          -             10   
+TK_PLUS                     YES       -                        +              12          -             8    
+EXPRESSION                  NO        NA                       -              -           44            8    
+BOOL_EXPRESSION             NO        NA                       -              -           60            9    
+BOOL_TERM                   NO        NA                       -              -           62            10   
+FACTOR                      NO        NA                       -              -           51            11   
+ID                          YES       -                        c1             12          -             12   
+TK_SEMICOLON                YES       -                        ;              12          -             7    
+ASSIGNMENT_LIST             NO        NA                       -              -           5             6    
+ASSIGNMENT_STMT             NO        NA                       -              -           42            7    
+ID                          YES       -                        c2             13          -             8    
+TK_EQUALS                   YES       -                        =              13          -             8    
+EXPRESSION                  NO        NA                       -              -           47            8    
+TERM                        NO        NA                       -              -           49            9    
+FACTOR                      NO        NA                       -              -           51            10   
+ID                          YES       -                        a1             13          -             11   
+TK_DIV                      YES       -                        /              13          -             10   
+TERM                        NO        NA                       -              -           50            10   
+FACTOR                      NO        NA                       -              -           51            11   
+ID                          YES       -                        a2             13          -             12   
+TK_SEMICOLON                YES       -                        ;              13          -             8    
+ASSIGNMENT_LIST             NO        NA                       -              -           5             7    
+ASSIGNMENT_STMT             NO        NA                       -              -           42            8    
+ID                          YES       -                        b1             14          -             9    
+TK_EQUALS                   YES       -                        =              14          -             9    
+EXPRESSION                  NO        NA                       -              -           44            9    
+BOOL_EXPRESSION             NO        NA                       -              -           60            10   
+BOOL_TERM                   NO        NA                       -              -           61            11   
+FACTOR                      NO        NA                       -              -           51            12   
+ID                          YES       -                        c1             14          -             13   
+TK_AND                      YES       -                        &&&            14          -             12   
+BOOL_TERM                   NO        NA                       -              -           62            12   
+FACTOR                      NO        NA                       -              -           51            13   
+ID                          YES       -                        d              14          -             14   
+TK_SEMICOLON                YES       -                        ;              14          -             9    
+ASSIGNMENT_LIST             NO        NA                       -              -           5             8    
+ASSIGNMENT_STMT             NO        NA                       -              -           42            9    
+ID                          YES       -                        c1             15          -             10   
+TK_EQUALS                   YES       -                        =              15          -             10   
+EXPRESSION                  NO        NA                       -              -           47            10   
+TERM                        NO        NA                       -              -           48            11   
+FACTOR                      NO        NA                       -              -           51            12   
+ID                          YES       -                        a1             15          -             13   
+TK_STAR                     YES       -                        *              15          -             12   
+TERM                        NO        NA                       -              -           50            12   
+FACTOR                      NO        NA                       -              -           51            13   
+ID                          YES       -                        a2             15          -             14   
+TK_SEMICOLON                YES       -                        ;              15          -             10   
+ASSIGNMENT_LIST             NO        NA                       -              -           6             9    
+ASSIGNMENT_STMT             NO        NA                       -              -           42            10   
+ID                          YES       -                        m1             16          -             11   
+TK_EQUALS                   YES       -                        =              16          -             11   
+EXPRESSION                  NO        NA                       -              -           45            11   
+TERM                        NO        NA                       -              -           50            12   
+FACTOR                      NO        NA                       -              -           51            13   
+ID                          YES       -                        m2             16          -             14   
+TK_PLUS                     YES       -                        +              16          -             12   
+EXPRESSION                  NO        NA                       -              -           44            12   
+BOOL_EXPRESSION             NO        NA                       -              -           60            13   
+BOOL_TERM                   NO        NA                       -              -           62            14   
+FACTOR                      NO        NA                       -              -           51            15   
+ID                          YES       -                        a1             16          -             16   
+TK_SEMICOLON                YES       -                        ;              16          -             11   
+CR_CL                       YES       -                        }              17          -             1    
+VARIABLE NAME         TYPE  DYNAMIC         TYPE EXPRESSION               
+new                   0     NOT_APPLICABLE  <type=integer>     
+d                     0     NOT_APPLICABLE  <type=integer>     
+w                     0     NOT_APPLICABLE  <type=integer>     
+e2                    0     NOT_APPLICABLE  <type=integer>     
+v1                    0     NOT_APPLICABLE  <type=integer>     
+a1                    0     NOT_APPLICABLE  <type=integer>     
+a2                    0     NOT_APPLICABLE  <type=integer>     
+b1                    0     NOT_APPLICABLE  <type=boolean>     
+b2                    0     NOT_APPLICABLE  <type=boolean>     
+b3                    0     NOT_APPLICABLE  <type=boolean>     
+c1                    0     NOT_APPLICABLE  <type=real>        
+c2                    0     NOT_APPLICABLE  <type=real>        
+m1                    0     NOT_APPLICABLE  <type=real>        
+m2                    0     NOT_APPLICABLE  <type=real>        
+m3                    0     NOT_APPLICABLE  <type=real>        
+ERRORS:
+LINE NUM  CATEGORY       OPERATOR  LEXEME OP1          TYPE OP1                      LEXEME OP2          TYPE OP2                      DEPTH   MESSAGE
+14        ASSIGNMENT     &&&       c1                  <type=real>                   d                   <type=integer>                12      Logical ops on int/real NA
+14        ASSIGNMENT     =         b1                  <type=boolean>                ***                 ***                           8       Identifier-Expr type mismatch
+15        ASSIGNMENT     =         c1                  <type=real>                   ***                 <type=integer>                9       Identifier-Expr type mismatch

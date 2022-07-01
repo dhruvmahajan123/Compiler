@@ -1,0 +1,59 @@
+program TK_PROGRAM BR_OP BR_CL CR_OP programbody CR_CL
+programbody declaration_list assignment_list
+declaration_list declaration_stmt declaration_list
+declaration_list declaration_stmt
+assignment_list assignment_stmt assignment_list
+assignment_list assignment_stmt
+declaration_stmt prim_declaration_stmt
+declaration_stmt rectarr_declaration_stmt
+declaration_stmt jaggarr_declaration_stmt
+prim_declaration_stmt TK_DECLARE TK_ID TK_COLON prim_type TK_SEMICOLON
+prim_declaration_stmt TK_DECLARE TK_LIST TK_OF TK_VARIABLES id_list TK_COLON prim_type TK_SEMICOLON
+id_list TK_ID id_list
+id_list TK_ID
+prim_type INTEGER
+prim_type REAL
+prim_type BOOLEAN
+rectarr_declaration_stmt TK_DECLARE TK_ID TK_COLON TK_ARRAY range_list TK_OF prim_type TK_SEMICOLON
+rectarr_declaration_stmt TK_DECLARE TK_LIST TK_OF TK_VARIABLES id_list TK_COLON TK_ARRAY range_list TK_OF prim_type TK_SEMICOLON
+range_list range range_list
+range_list range 				
+range SQ_OP range_val TK_DOTDOT range_val SQ_CL
+range_val TK_ID
+range_val TK_CONSTANT
+jaggarr_declaration_stmt jaggarr2d_declaration_stmt
+jaggarr_declaration_stmt jaggarr3d_declaration_stmt
+jaggarr2d_declaration_stmt TK_DECLARE TK_ID TK_COLON TK_JAGGED TK_ARRAY range SQ_OP SQ_CL TK_OF prim_type TK_SEMICOLON jaggarr2d_init_list
+jaggarr2d_declaration_stmt TK_DECLARE TK_LIST TK_OF TK_VARIABLES id_list TK_COLON TK_JAGGED TK_ARRAY range SQ_OP SQ_CL TK_OF prim_type TK_SEMICOLON jaggarr2d_init_list
+jaggarr2d_init_list jaggarr2d_init_stmt jaggarr2d_init_list
+jaggarr2d_init_list jaggarr2d_init_stmt
+jaggarr2d_init_stmt r1 SQ_OP TK_CONSTANT SQ_CL TK_COLON TK_SIZE TK_CONSTANT TK_COLON TK_VALUES CR_OP jaggarr2d_val_list CR_CL
+jaggarr2d_val_list TK_CONSTANT TK_SEMICOLON jaggarr2d_val_list
+jaggarr2d_val_list TK_CONSTANT
+jaggarr3d_declaration_stmt TK_DECLARE TK_ID TK_COLON TK_JAGGED TK_ARRAY range SQ_OP SQ_CL SQ_OP SQ_CL TK_OF prim_type TK_SEMICOLON jaggarr3d_init_list
+jaggarr3d_declaration_stmt TK_DECLARE TK_LIST TK_OF TK_VARIABLES id_list TK_COLON TK_JAGGED TK_ARRAY range SQ_OP SQ_CL SQ_OP SQ_CL TK_OF prim_type TK_SEMICOLON jaggarr3d_init_list
+jaggarr3d_init_list jaggarr3d_init_stmt jaggarr3d_init_list
+jaggarr3d_init_list jaggarr3d_init_stmt
+jaggarr3d_init_stmt r1 SQ_OP TK_CONSTANT SQ_CL TK_COLON TK_SIZE TK_CONSTANT TK_COLON TK_VALUES CR_OP jaggarr3d_row_list CR_CL
+jaggarr3d_row_list jaggarr3d_val_list TK_SEMICOLON jaggarr3d_val_list
+jaggarr3d_row_list jaggarr3d_val_list
+jaggarr3d_val_list TK_CONSTANT jaggarr3d_val_list
+jaggarr3d_val_list TK_CONSTANT
+assignment_stmt TK_ID TK_EQUALS expression TK_SEMICOLON
+expression bool_expression
+expression term TK_PLUS expression
+expression term TK_MINUS expression
+expression term
+term factor TK_STAR term
+term factor TK_DIV term
+term factor
+factor TK_ID
+factor TK_ID SQ_OP index_list SQ_CL
+index_list index index_list
+index_list index
+index TK_ID
+index TK_CONSTANT
+bool_expression bool_term TK_OR bool_expression
+bool_expression bool_term
+bool_term factor TK_AND bool_term
+bool_term factor
